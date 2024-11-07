@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for bike in bike_list %}
+        {% if forloop.counter <= 3 %}
+            {{ forloop.counter }}위: <a href="/bike/{{ forloop.counter0 }}">{{ bike.title }}</a><br>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
